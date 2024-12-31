@@ -16,21 +16,11 @@
 
 
 function canJump(nums: number[]): boolean {
-  const len = nums.length
 
-  // 可以达到的最大 idx
-  let maxIdx = 0
-  for(let i = 0; i < len; i++) {
-      if (i > maxIdx) return false
 
-      maxIdx = Math.max(i + nums[i], maxIdx)
-      if (maxIdx >= len - 1) return true
-  }
-
-  return false
-
-  
+  return true
   
 };
+
 
 export { canJump }
